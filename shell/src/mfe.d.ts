@@ -1,0 +1,1 @@
+declare module "app2/bootloader";
