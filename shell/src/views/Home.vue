@@ -8,6 +8,6 @@
 </template>
 
 <script setup lang="ts">
-import { store } from '../store';
+import { store } from 'shell/RootStore';
 
 </script>

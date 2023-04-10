@@ -49,9 +49,12 @@ module.exports = (_, argv) => ({
       name: "shell",
       filename: "remoteEntry.js",
       remotes: {
+        shell: "shell@http://localhost:8080/remoteEntry.js",
         app2: "app2@http://localhost:8082/remoteEntry.js"
       },
-      exposes: {},
+      exposes: {
+        "./RootStore": "./src/store"
+      },
       shared: require("./package.json").dependencies,
     }),
     new HtmlWebPackPlugin({
