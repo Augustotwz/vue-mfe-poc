@@ -52,7 +52,7 @@ module.exports = (_, argv) => ({
         shell: "shell@http://localhost:8080/remoteEntry.js"
       },
       exposes: {
-        "./bootloader": "./src/bootloader"
+        "./routes": "./src/router"
       },
       shared: require("./package.json").dependencies,
     }),

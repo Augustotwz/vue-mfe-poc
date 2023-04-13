@@ -2,13 +2,13 @@
   <div class="w-full min-h-screen">
     <ul class="bg-blue-200 text-white text-lg p-2 flex gap-8 w-full">
       <li>
-        <router-link to="/page1">Page 1</router-link>
+        <router-link to="/app2/page1">Page 1</router-link>
       </li>|
       <li>
-        <router-link to="/page2">Page 2</router-link>
+        <router-link to="/app2/page2">Page 2</router-link>
       </li>|
       <li>
-        <router-link to="/page3">Page 3</router-link>
+        <router-link to="/home">Home</router-link>
       </li>
     </ul>
     <section class="w-full p-4">

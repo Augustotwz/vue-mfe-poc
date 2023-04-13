@@ -3,20 +3,20 @@ import { createStore } from 'vuex'
 export const store = createStore({
   state () {
     return {
-      count: 0
+      value: 0
     }
   },
   mutations: {
     increment (state) {
-      state.count++
+      state.value++
     },
     decrement (state) {
-      state.count--
+      state.value--
     }
   },
   getters: {
-    getCount (state) {
-      return state.count;
+    getValue (state) {
+      return state.value;
     }
   }
 })
