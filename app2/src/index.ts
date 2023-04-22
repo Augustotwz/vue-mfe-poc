@@ -1,3 +1,1 @@
-import("./bootloader").then(app => {
-	app.mountMfe("#app2");
-});
+import("shell/bootloader");

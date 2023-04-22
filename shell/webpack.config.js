@@ -53,7 +53,8 @@ module.exports = (_, argv) => ({
         app2: "app2@http://localhost:8082/remoteEntry.js"
       },
       exposes: {
-        "./RootStore": "./src/store"
+        "./RootStore": "./src/store",
+        "./bootloader": "./src/bootloader"
       },
       shared: require("./package.json").dependencies,
     }),
