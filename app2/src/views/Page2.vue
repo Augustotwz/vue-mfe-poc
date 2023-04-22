@@ -1,5 +1,5 @@
 <template>
-  <h1>Page 1</h1> App2 count: {{ store.getters.getValue }}
+  <h1>Page 2</h1> App2 count: {{ store.getters.getValue }}
   <div class="flex gap-4">
     <button @click="store.commit('decrement')"> Decrement </button>
     <button @click="store.commit('increment')"> Increment </button>
