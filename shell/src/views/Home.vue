@@ -1,5 +1,7 @@
 <template>
-  <h1>Home</h1> Count: {{ store.getters.getCount }}
+  <h1>Home</h1> 
+  <h3>Host global state:</h3>
+  <pre> {{ store.state }} </pre>
 
   <div class="flex gap-4">
     <button @click="store.commit('decrement')"> Decrement </button>
