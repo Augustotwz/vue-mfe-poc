@@ -4,7 +4,7 @@
             <li v-for="route in routes" :key="route.name">
                 <router-link 
                     class="block p-4 uppercase text-gray-900 hover:bg-gray-300 "
-                    :to="route.path"
+                    :to="{ name: route.name }"
                 >
                     {{ route.name }}
                 </router-link>
@@ -15,7 +15,7 @@
 
 <script setup lang="ts">
 import { PropType } from "vue";
-import { RouteRecordRaw  } from "vue-router";
+import { RouteRecordRaw } from "vue-router";
 
 defineProps({
     routes: {

@@ -58,6 +58,7 @@ module.exports = (_, argv) => ({
         app2: "app2@http://localhost:8082/remoteEntry.js"
       },
       exposes: {
+        "./TheNavbar": "./src/components/TheNavbar.vue",
         "./RootStore": "./src/store",
         "./bootloader": "./src/bootloader"
       },
