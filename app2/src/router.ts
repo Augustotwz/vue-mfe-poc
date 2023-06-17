@@ -1,6 +1,7 @@
 export const app2Routes = [
   {
     path: '/app2',
+    name: 'app2',
     redirect: "/app2/page1",
     component: () => import("./App.vue"),
     children: [
